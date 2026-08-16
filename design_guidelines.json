@@ -1,0 +1,157 @@
+{
+  "brand_identity": {
+    "name": "Kausar AquaTech",
+    "line": "The Patel and Akbani Co.",
+    "voice": "calm, factual, no exclamation points, sentence-case buttons",
+    "theme": "light",
+    "art_direction": "Awwwards Site-of-the-Day level, restrained, minimal, premium, large kinetic hero, masked line-by-line reveal, real product photography with spotlight and clipped frames, numbered manifesto chapters, slow editorial marquee, purposeful motion."
+  },
+  "typography": {
+    "headlines": {
+      "family": "Playfair Display, serif",
+      "weight": "400 to 600",
+      "style": "refined, elegant, tight tracking for large sizes"
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weight": "300, 400",
+      "style": "clean, readable, leading-relaxed"
+    },
+    "labels": {
+      "style": "uppercase, wide letter-spacing (2px+), tiny size (text-xs)"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-6xl lg:text-[5vw] tracking-tighter leading-none",
+      "h2": "text-3xl md:text-4xl lg:text-5xl tracking-tight leading-[1.1]",
+      "h3": "text-xl md:text-2xl lg:text-3xl",
+      "body": "text-base md:text-lg text-muted-text",
+      "label": "text-[10px] md:text-xs uppercase tracking-[0.2em] font-medium"
+    }
+  },
+  "colors": {
+    "primary": {
+      "navy": "#0B2545",
+      "usage": "cap, buttons, footer background, logotype, selected states, high-contrast borders"
+    },
+    "backgrounds": {
+      "bone": "#F4EEE2",
+      "usage": "labels, secondary sections, subtle overlays"
+    },
+    "page_bg": {
+      "warm_off_white": "#FBF8F1",
+      "usage": "main site background, body background"
+    },
+    "accents": {
+      "silver": "#9AA0A6",
+      "usage": "thin rule lines, dividers (1px borders), inactive elements"
+    },
+    "text": {
+      "navy": "#0B2545",
+      "muted": "#5C574A",
+      "muted_light": "#807A68"
+    }
+  },
+  "spacing_system": {
+    "philosophy": "Generous Spacing Philosophy. 2-3x more spacing than typical designs to evoke luxury.",
+    "section_padding": "py-24 md:py-32 lg:py-40",
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "element_gap": "gap-8 md:gap-16 lg:gap-24",
+    "grid_gap": "gap-6 md:gap-12",
+    "borders": "Use 1px solid borders in #9AA0A6 (silver) for structural separation without heavy dropshadows."
+  },
+  "visual_enhancers": {
+    "cursor": "Site-wide liquid cursor using Canvas metaball blob. Overshoot/lag physics. Bone fill (#F4EEE2) with Navy outline (#0B2545). Inverts when hovering over Navy sections. Add click ripple effect. Must disable on touch devices and if prefers-reduced-motion is true. Use pointer-events-none.",
+    "borders": "Crisp 1px silver lines (#9AA0A6) separating sections and bento grids.",
+    "photography": "Treated deliberately. Use spotlight effects, clipped frames (e.g., arch or tight rectangular crops). Max height 80vh on mobile.",
+    "surfaces": "Flat solid surfaces only. No glassmorphism here, to retain a matte, tactile paper-like feel."
+  },
+  "motion_specs": {
+    "engine": "framer-motion for React, lenis for smooth momentum scrolling.",
+    "hero_reveal": "Masked line-by-line reveal on load. Delay: 0.2s, Stagger: 0.15s, Duration: 1.2s, Easing: [0.76, 0, 0.24, 1] (Custom cubic-bezier for dramatic smooth reveal).",
+    "scroll_reveals": "Elements slide up slightly (y: 30, opacity: 0 -> 1) with view-triggered intersections. Use `whileInView` with `viewport={{ once: true, margin: '-10%' }}`.",
+    "hover_states": "Buttons and links use color inversion or gentle transform (y: -2px). Minimal, unforced.",
+    "marquee": "One slow editorial marquee (react-fast-marquee). High contrast text, uppercase serif or mono style, extremely slow speed (speed={20})."
+  },
+  "components": {
+    "buttons": {
+      "primary": "Pill-shaped or slightly rounded (rounded-sm). bg-[#0B2545] text-[#F4EEE2]. Hover: bg-[#0B2545]/90. Font: sans-serif, sentence-case. Padding: px-8 py-4.",
+      "secondary": "Transparent background, border border-[#0B2545] text-[#0B2545]. Hover: bg-[#0B2545] text-[#F4EEE2].",
+      "testing": "MUST include data-testid attribute."
+    },
+    "inputs": {
+      "style": "Minimalist. border-b border-[#9AA0A6] bg-transparent rounded-none px-0 py-3 focus:border-[#0B2545] focus:outline-none focus:ring-0 transition-colors. Text: #0B2545."
+    },
+    "dividers": {
+      "style": "w-full h-[1px] bg-[#9AA0A6]"
+    },
+    "step_indicator": {
+      "style": "Minimal text-based. 'Step 1 of 3 - Size'. No generic progress bars. Use uppercase labels with tracking-widest."
+    }
+  },
+  "layouts": {
+    "Home": {
+      "hero": "Large kinetic hero. 3D GLSL water splash background (Three.js/R3F) running behind text (40-60% opacity). Masked line-by-line reveal of headline ('Kausar AquaTech') and subtext. CTAs: 'Order now' and 'Design a label'.",
+      "marquee": "Slow editorial marquee separating hero from services.",
+      "services": "Three-up strip bento layout (Tetris style). Cards: Wholesale & retail, RO & mineral water, Custom labels. Use 1px borders, generous padding (p-12).",
+      "trust_strip": "Horizontal strip with partner/client text. Very minimalist, huge typography.",
+      "footer_cta": "Large banner. bg-[#0B2545] text-[#F4EEE2]. Massive typography CTA 'Start your order'."
+    },
+    "About": {
+      "hero": "Company story (placeholder). Numbered manifesto chapters (01, 02, 03). Use massive serif numbers floating behind or next to body text.",
+      "manufacturing": "Short factual statements. Bento grid of photos (clipped frames) and text blocks showing facility and quality.",
+      "photo_strip": "Horizontal scrolling or staggered images of manufacturing.",
+      "cta": "Section prompting contact."
+    },
+    "Order": {
+      "structure": "Split screen layout. Left: Sticky live bottle preview (3D or layered 2D if 3D bottle too heavy, but try 3D R3F bottle). Right: Scrollable 3-step guided flow.",
+      "steps": "1. Size (250ml/500ml/1L). 2. Variety (Mineral/RO/Scented/Flavoured). 3. Customization (cap color swatch, label paper texture, custom label text max 14 chars with real-time validation).",
+      "summary": "Order summary box pinned at bottom or end of flow. Quantity selector. 'Place order' button."
+    },
+    "Contact": {
+      "layout": "Two-column grid. Left: Huge typography 'Get in touch' and contact form. Right: Branch addresses (Badnera 444701, Nandgaon Khandeshwar 444708), click-to-call phone numbers (8605629746, 9422549948), and Google Maps embed (grayscale/desaturated map style)."
+    }
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1764694187688-454d172e5ca0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHxwcmVtaXVtJTIwd2F0ZXIlMjBib3R0bGUlMjBtaW5pbWFsfGVufDB8fHx8MTc4Njc5OTk5MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Premium water bottle with bubbles",
+        "category": "Home/Order Product Showcase"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1780882899461-0b158f457b44?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHx3YXRlciUyMG1hbnVmYWN0dXJpbmclMjBmYWNpbGl0eSUyMGNsZWFufGVufDB8fHx8MTc4Njc5OTk5MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Clean water storage and manufacturing facility",
+        "category": "About Manufacturing Strip"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1609743307371-9495ca150e6c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwxfHx3YXRlciUyMGRyb3BsZXQlMjBjcm93biUyMHNwbGFzaHxlbnwwfHx8fDE3ODY3OTk5OTF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Water droplet crown splash",
+        "category": "Fallback for Hero or About imagery"
+      }
+    ]
+  },
+  "3d_libraries": {
+    "hero_splash": "Use `@react-three/fiber` and `@react-three/drei`. Create a custom shader material (GLSL) for the background splash. It must feature droplet impact, crown splash, concentric ripples, 6-8s eased loop, navy/bone tint (near transparent), 40-60% opacity. Render it as a full-screen fixed background in the hero section.",
+    "liquid_cursor": "Canvas based. Can be implemented with pure Canvas API or Framer Motion tracking mouse position with an SVG gooey filter (feColorMatrix)."
+  },
+  "universal_guidelines_for_main_agent": [
+    "No generic centered layouts, simplistic gradients, or uniform styling. Prioritize high-end editorial feel.",
+    "Do NOT apply universal transitions (e.g. `transition: all`). Target specific properties.",
+    "DO NOT center align the app container. No `.App { text-align: center; }`.",
+    "Must use lenis for smooth momentum scrolling (`npm i @studio-freight/react-lenis`).",
+    "Must use framer-motion for UI interactions and scroll reveals.",
+    "Use lucide-react for icons. No emojis as icons.",
+    "Ensure all interactive elements have a `data-testid` attribute.",
+    "Use sonner for toast notifications (e.g. Order placed successfully, Form submitted).",
+    "Follow WCAG AA contrast ratio requirements. Ensure text over the 3D canvas remains highly readable (navy text on the off-white background with subtle splash)."
+  ],
+  "instructions_to_main_agent": [
+    "Setup Tailwind config with the custom colors: navy (#0B2545), bone (#F4EEE2), page_bg (#FBF8F1), silver (#9AA0A6), text_muted (#5C574A).",
+    "Set global body background to #FBF8F1 and default text color to #0B2545.",
+    "Implement the Liquid Cursor at the root layout level so it persists across routes. Hide native cursor using global CSS `* { cursor: none !important; }` (except for reduced-motion).",
+    "Create the Three.js Splash as an isolated component wrapped in `<Suspense>` so it doesn't block page load.",
+    "For the Order Page, build a sophisticated form with real-time state updates that affect the right-side preview (or left-side sticky preview). Include validation for the 14-char limit.",
+    "In the Contact page, ensure the Google Maps embed uses a CSS filter (e.g., `grayscale(1) contrast(1.2) sepia(0.2) hue-rotate(180deg) opacity(0.8)`) to match the brand palette, rather than the default colorful map.",
+    "Use Framer Motion to create the masked line-by-line reveal: wrap text lines in `overflow-hidden` divs, and translate the text up from `y: '100%'` to `y: 0`."
+  ]
+}
