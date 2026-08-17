@@ -13,7 +13,7 @@ const chapters = [
   {
     n: "01",
     title: "Who we are",
-    copy: "Kausar AquaTech is the water bottling house of The Patel and Akbani Co. — a family-run manufacturer based in Amravati-Badnera, Maharashtra, with a sub branch at Nandgaon Khandeshwar. What began as a local supply of drinking water has grown into a plant that bottles for shops, functions, and businesses across the region.",
+    copy: "Kausar AquaTech is led by Founder Huzaif Ur Rahman Patel and Co-founder Altamash Akbani,building a modern and trusted name in the water industry since 2024.Based in Amravati-Badnera, we provide quality bottled water and customised solutions for retail,businesses, events, and functions—with a focus on consistency and dependable service.",
   },
   {
     n: "02",
