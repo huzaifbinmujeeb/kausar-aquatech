@@ -11,7 +11,7 @@ kausar-aquatech/
 ├── backend/
 │   ├── server.py          # FastAPI app: /api/orders, /api/contact
 │   ├── requirements.txt
-│   └── .env                # MONGO_URL, DB_NAME, CORS_ORIGINS
+│                    
 ├── frontend/
 │   ├── src/
 │   │   ├── components/      # Header, Footer, LiquidCursor, WaterSplash,
@@ -23,7 +23,7 @@ kausar-aquatech/
 │   ├── tailwind.config.js
 │   ├── postcss.config.js
 │   ├── craco.config.js
-│   └── .env                 # REACT_APP_BACKEND_URL
+│                  
 ├── design_guidelines.json   # Original design spec this build follows
 ├── memory/PRD.md            # Build notes / product requirements doc
 └── README.md
